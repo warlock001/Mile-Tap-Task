@@ -1,0 +1,45 @@
+@media screen and (max-width: 425px) {
+  .mealItemContainer {
+    width: 100% !important;
+  }
+
+  .MealItemTitle {
+    font-size: 18px !important;
+    font-weight: 500;
+  }
+
+  .mealItemWrapper {
+    justify-content: space-between;
+  }
+}
+
+.mealImage {
+  width: 150px;
+  height: auto;
+}
+
+.mealItemContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #ed7d31;
+  padding: 15px;
+  width: 50%;
+  gap: 20px;
+}
+
+.MealItemTitle {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.mealItemWrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.likeButton {
+  cursor: pointer;
+}

@@ -1,0 +1,31 @@
+.heading {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 36px;
+}
+
+.screen-root-div {
+  max-width: 1440px;
+  margin: auto;
+  padding: 50px 30px;
+}
+
+.button {
+  width: fit-content;
+  /* display: inline-flex; */
+  padding: 15px 45px;
+  background-color: #ed7d31;
+  color: #fff;
+  border: unset;
+  border-radius: 15px;
+  margin: auto;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+  .screen-root-div {
+    max-width: 1440px;
+    margin: auto;
+    padding: 20px 10px;
+  }
+}

@@ -1,0 +1,185 @@
+.App {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 100px);
+}
+.headerLinks {
+  margin: 0;
+  padding: 0 20px;
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.topHeaderLink {
+  padding-bottom: 50px;
+}
+
+.headerLinksCentered {
+  margin: 0 auto !important;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  background-color: #1a1c1e;
+  padding: 50px 0;
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+  position: relative;
+  transition: all 0.5s ease-out;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: start;
+  padding-top: 50px;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.body {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.body::before {
+  content: "";
+  background: url("./images/background.jpg");
+  background-size: cover;
+  opacity: 0.5 !important;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
+  z-index: -1;
+}
+
+.headerLinks > li {
+  padding: 10px 20px !important;
+  padding: 10px 0px;
+  list-style: none;
+}
+
+.headerLinks > div > li {
+  padding: 10px 20px !important;
+  padding: 10px 0px;
+  list-style: none;
+}
+
+.headerLinks > div > li > a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #b5b7bf;
+  font-size: 18px;
+}
+
+.headerLinks > div > p {
+  padding: 0px 20px !important;
+  color: #b5b7bf;
+  font-size: 12px;
+}
+
+.headerLinksActive {
+  border-radius: 15px;
+  list-style: none;
+  background-color: #313334;
+}
+
+.headerLinksActive > a {
+  color: #fff !important;
+  border-radius: 15px;
+  list-style: none;
+  background-color: #313334;
+}
+
+.headerLinks > div > li > a:hover {
+  color: #fff;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1a1c1e;
+    padding: 50px 0;
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+    position: relative;
+    transition: all 0.5s ease-out;
+    position: absolute;
+    z-index: 5;
+  }
+}

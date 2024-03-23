@@ -1,0 +1,99 @@
+.about-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.shadowCircle {
+  width: 300px;
+  height: 300px;
+  background-color: #ed7d31;
+  border-radius: 50%;
+}
+
+.profilePicture {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  left: -25px;
+}
+
+.about-section {
+  width: 50%;
+}
+
+.image-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.shadow-image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.grid-row {
+  display: grid;
+  flex-direction: row;
+  gap: 50px;
+  margin-bottom: 50px;
+  grid-template-columns: auto auto;
+}
+label {
+  font-size: 24px;
+  font-weight: 600;
+}
+.value {
+  color: #ed7d31;
+  font-size: 24px;
+}
+@media screen and (max-width: 425px) {
+  .about-wrapper {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+
+  .image-section {
+    width: 100%;
+  }
+
+  .about-section {
+    width: 100%;
+  }
+
+  .grid-row {
+    grid-template-columns: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-section-heading {
+    text-align: center;
+    font-size: 42px !important;
+  }
+
+  .shadowCircle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .profilePicture {
+    width: 200px;
+    height: 200px;
+  }
+}
